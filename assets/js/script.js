@@ -10,3 +10,10 @@ window.addEventListener('DOMContentLoaded', function () {
     }, { threshold: 0.05 });
     els.forEach(function (el) { io.observe(el); });
 });
+
+// LIGHTBOX
+const lightbox = GLightbox({ selector: '.glightbox' });
+
+document.getElementById('bucoxol-card').addEventListener('click', () => {
+  lightbox.openAt(0);
+});
