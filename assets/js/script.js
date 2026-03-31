@@ -9,6 +9,19 @@ var io = new IntersectionObserver(function (entries) {
 }, { threshold: 0.05 });
 els.forEach(function (el) { io.observe(el); });
 
+// MENU
+const menuBtn = document.querySelector('.menu');
+const navLinks = document.querySelector('.nav-links');
+
+menuBtn.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+    });
+});
 
 // LIGHTBOX
 const lightbox = GLightbox({ selector: '.glightbox' });
