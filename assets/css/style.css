@@ -73,6 +73,10 @@ nav {
     color: var(--text);
 }
 
+.menu {
+    display: none;
+}
+
 /* HERO */
 #hero {
     min-height: 100vh;
@@ -459,7 +463,32 @@ footer {
     }
 
     .nav-links {
-        gap: 1rem;
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 61px;
+        left: 0;
+        right: 0;
+        background: rgba(247, 245, 242, 0.97);
+        backdrop-filter: blur(10px);
+        border-bottom: 1px solid var(--border);
+        padding: 0.5rem 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 0.8rem 1.4rem;
+        font-size: 1rem;
+    }
+
+    .menu {
+        display: flex;
+        cursor: pointer;
     }
 
     section,
