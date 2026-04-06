@@ -1,3 +1,34 @@
+/* Fonts */
+@font-face {
+  font-family: 'DM Mono'; 
+  src: local('DM Mono Regular'), 
+       local('DMMono-Regular'),
+       url('assets/fonts/DM_Mono/DMMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; 
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: local('DM Serif Display Regular'), 
+       local('DMSerifDisplay-Regular'),
+       url('assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Serif Display';
+  src: local('DM Serif Display Italic'), 
+       local('DMSerifDisplay-Italic'),
+       url('assets/fonts/DM_Serif_Display/DMSerifDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic; 
+  font-display: swap;
+}
+
 :root {
     --bg: #f7f5f2;
     --surface: #eeeae4;
@@ -6,6 +37,8 @@
     --muted: #6b6560;
     --accent: #2d6a4f;
     --accent-light: #e8f5ee;
+    --font-main: 'DM Mono', monospace;
+    --font-heading: 'DM Serif Display', serif;
 }
 
 *,
@@ -23,7 +56,7 @@ html {
 body {
     background: var(--bg);
     color: var(--text);
-    font-family: 'DM Mono', monospace;
+    font-family: var(--font-main);
     font-size: 14px;
     line-height: 1.7;
     min-height: 100vh;
@@ -46,7 +79,7 @@ nav {
 }
 
 .nav-logo {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.1rem;
     color: var(--text);
     text-decoration: none;
@@ -101,7 +134,7 @@ nav {
 }
 
 h1 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-heading);
     font-size: clamp(2.8rem, 6vw, 4.5rem);
     line-height: 1.1;
     letter-spacing: -0.03em;
@@ -137,7 +170,7 @@ h1 em {
     align-items: center;
     gap: 0.5rem;
     padding: 0.7rem 1.5rem;
-    font-family: 'DM Mono', monospace;
+    font-family: var(--font-main);
     font-size: 12px;
     letter-spacing: 0.04em;
     text-decoration: none;
@@ -195,7 +228,7 @@ section {
 }
 
 h2 {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-heading);
     font-size: clamp(1.8rem, 4vw, 2.6rem);
     letter-spacing: -0.02em;
     line-height: 1.15;
@@ -278,7 +311,7 @@ h2 {
 }
 
 .exp-role {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-heading);
     font-size: 1rem;
     letter-spacing: -0.01em;
     margin-bottom: 0.15rem;
@@ -373,7 +406,7 @@ h2 {
 }
 
 .project-name {
-    font-family: 'DM Serif Display', serif;
+    font-family: var(--font-heading);
     font-size: 1.1rem;
     transition: color 0.3s;
 }
