@@ -424,6 +424,7 @@ h2 {
     border-radius: 2px;
     letter-spacing: 0.04em;
     transition: background 0.3s, color 0.3s, border-color 0.3s;
+    text-derocation: none;
 }
 
 .web-badge {
