@@ -437,6 +437,7 @@ h2 {
     border: 1px solid var(--border);
     color: var(--muted);
     background: var(--surface);
+    text-decoration: none;
 }
 
 .project-desc {
