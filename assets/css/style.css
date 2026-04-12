@@ -427,17 +427,6 @@ h2 {
     text-derocation: none;
 }
 
-a.project-badge {
-    text-decoration: none;
-    color: var(--muted);
-    background: var(--surface);
-    border-color: var(--border);
-}
-
-a.project-badge:hover {
-    text-decoration: none;
-}
-
 .web-badge {
     border: 1px solid var(--accent);
     color: var(--accent);
