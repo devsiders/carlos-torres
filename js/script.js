@@ -26,12 +26,6 @@ navLinks.querySelectorAll('a').forEach(link => {
 // LIGHTBOX
 const lightbox = GLightbox({ selector: '.glightbox' });
 
-// Proyecto Bucoxol
-document.getElementById('bucoxol-card').addEventListener('click', () => {
-  const firstImg = document.querySelector('a.glightbox[data-gallery="bucoxol"]');
-  lightbox.open(firstImg);
-});
-
 // Proyecto SMS
 document.getElementById('sms-card').addEventListener('click', () => {
   const firstImg = document.querySelector('a.glightbox[data-gallery="sms"]');
