@@ -22,12 +22,3 @@ navLinks.querySelectorAll('a').forEach(link => {
         navLinks.classList.remove('open');
     });
 });
-
-// LIGHTBOX
-const lightbox = GLightbox({ selector: '.glightbox' });
-
-// Proyecto SMS
-document.getElementById('sms-card').addEventListener('click', () => {
-  const firstImg = document.querySelector('a.glightbox[data-gallery="sms"]');
-  lightbox.open(firstImg);
-});
