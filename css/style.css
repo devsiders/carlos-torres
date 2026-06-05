@@ -532,7 +532,7 @@ footer {
     padding: 2.5rem 3rem;
     border-top: 1px solid var(--border);
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
     color: var(--muted);
     font-size: 11px;
