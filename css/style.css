@@ -251,6 +251,12 @@ section {
     margin-top: 0.5rem;
 }
 
+.stack-learning-title {
+    margin-top: 15px; 
+    font-size: 0.9rem; 
+    opacity: 0.8;
+}
+
 .tag {
     font-size: 11px;
     padding: 0.3rem 0.7rem;
